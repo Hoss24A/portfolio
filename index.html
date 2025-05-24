@@ -2,187 +2,162 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
-    <title>Personal Portfolio #04 | AsmrProg</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>Personal Portfolio | AsmrProg</title>
 </head>
 
 <body>
 
-    <div class="navbar">
-        <h2>AsmrProg</h2>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-4 py-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">AsmrProg</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
         </ul>
-        <button class="hire-btn">Hire Me</button>
+        <button class="btn btn-hire">Hire Me</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <section class="main text-center container py-5">
+    <h4>Hi, I Am <span>Hossam Asad</span> 👋</h4>
+    <p class="title">A Creative Computer Engineer</p>
+    <p class="subtitle">I Like To Code And Build Many Different Things</p>
+    <img src="images/logo-no-background.png" alt="Profile Logo" class="img-fluid mt-4" />
+  </section>
+
+  <!-- Guarantee Section -->
+  <section class="guarantee container d-flex flex-wrap justify-content-center gap-3 py-4">
+    <div class="item d-flex align-items-center justify-content-between p-3 col-md-5">
+      <div class="icon"><i class='bx bx-check-shield'></i></div>
+      <div class="info ms-3">
+        <h3>4+</h3>
+        <p>Years Of Experiences</p>
+      </div>
+      <i class='bx bx-chevron-right'></i>
     </div>
 
-    <div class="main">
-        <h4>Hi, I Am <span>AsmrProg</span> 👋</h4>
-        <p class="title">Creative FullStack Web Developer</p>
-        <p class="subtitle">I'm Design And Code Beautifully Simple Things And I Love What I Doing!</p>
-        <img src="images/logo-no-background.png">
+    <div class="item d-flex align-items-center justify-content-between p-3 col-md-5">
+      <div class="icon"><i class='bx bx-check-circle'></i></div>
+      <div class="info ms-3">
+        <h3>30+</h3>
+        <p>Completed Projects</p>
+      </div>
+      <i class='bx bx-chevron-right'></i>
     </div>
 
-    <div class="guarantee">
-        <div class="item">
-            <div class="icon">
-                <i class='bx bx-check-shield'></i>
-            </div>
-            <div class="info">
-                <h3>+5</h3>
-                <p>Years Of Experiences</p>
-            </div>
-            <i class='bx bx-chevron-right'></i>
-        </div>
-        <div class="item">
-            <div class="icon">
-                <i class='bx bx-check-circle'></i>
-            </div>
-            <div class="info">
-                <h3>+100</h3>
-                <p>Completed Projects</p>
-            </div>
-            <i class='bx bx-chevron-right'></i>
-        </div>
-        <div class="item">
-            <div class="icon">
-                <i class='bx bx-laugh'></i>
-            </div>
-            <div class="info">
-                <h3>+50</h3>
-                <p>Happy Clients</p>
-            </div>
-            <i class='bx bx-chevron-right'></i>
-        </div>
+    <div class="item d-flex align-items-center justify-content-between p-3 col-md-5">
+      <div class="icon"><i class='bx bx-laugh'></i></div>
+      <div class="info ms-3">
+        <h3>Always</h3>
+        <p>Learning and Growing</p>
+      </div>
+      <i class='bx bx-chevron-right'></i>
     </div>
+  </section>
 
-    <h5 class="seprator">Who I Am</h5>
+  <!-- About -->
+  <h5 class="seprator text-center my-5">Who I Am</h5>
+  <section class="about container d-flex flex-column flex-md-row align-items-center gap-4 py-4">
+    <img src="images/image2.jpg" class="img-fluid rounded" alt="About Me" />
+    <div class="info">
+      <h3>About Me</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque eveniet vitae fugit accusamus...</p>
+      <button class="btn btn-hire mt-3">Hire Me</button>
+    </div>
+  </section>
 
-    <div class="about">
-        <img src="images/image2.jpg">
+  <!-- Skills -->
+  <h5 class="seprator text-center my-5">My Skills</h5>
+  <section class="skills container py-4">
+    <div class="row">
+      <div class="col-md-6 left mb-4">
         <div class="info">
-            <h3>About Me</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque eveniet vitae fugit accusamus, cupiditate
-                labore quae officia sunt enim consectetur eligendi sit mollitia iste doloribus libero odio, quidem optio
-                autem!
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque eveniet vitae fugit accusamus,
-                cupiditate labore quae officia sunt enim consectetur eligendi sit mollitia iste doloribus libero odio,
-                quidem optio autem!
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque eveniet vitae fugit accusamus,
-                cupiditate labore quae officia sunt enim consectetur eligendi sit mollitia iste doloribus libero odio,
-                quidem optio autem!
-            </p>
-            <button class="hire-btn">Hire Me</button>
+          <h3>What My Programming Skills Include?</h3>
+          <p>I develop intuitive and responsive interfaces using modern web technologies.</p>
         </div>
+        <button class="btn btn-hire mt-3">Hire Me</button>
+      </div>
+      <div class="col-md-6 right d-flex flex-wrap gap-3 justify-content-start align-items-center">
+        <div class="item"><i class='bx bxl-html5'></i></div>
+        <div class="item"><i class='bx bxl-css3'></i></div>
+        <div class="item"><i class='bx bxl-typescript'></i></div>
+        <div class="item"><i class='bx bxl-git'></i></div>
+        <div class="item"><i class='bx bxl-bootstrap'></i></div>
+        <div class="item"><i class='bx bxl-php'></i></div>
+        <div class="item"><i class='bx bxl-sass'></i></div>
+        <div class="item"><i class='bx bxl-tailwind-css'></i></div>
+        <div class="item"><i class='bx bxl-mongodb'></i></div>
+        <div class="item"><i class='bx bxl-graphql'></i></div>
+        <div class="item"><i class='bx bxl-jquery'></i></div>
+        <div class="item"><i class='bx bxl-angular'></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-5 bg-dark text-light position-relative py-5">
+    <div class="start position-absolute top-0 start-50 translate-middle-x bg-warning text-dark text-center p-4 rounded shadow-lg w-75">
+      <h3>Start a project</h3>
+      <p>Interested in working together? Let’s queue up a chat. I’ll buy the coffee.</p>
+      <button class="btn btn-dark mt-2">Let's do this</button>
     </div>
 
-    <h5 class="seprator">My Skills</h5>
-
-    <div class="skills">
-        <div class="left">
-            <div class="info">
-                <h3>What My Programming Skills Included?</h3>
-                <p>
-                    I develop simple, intuitive and responsive user interface that helps users get things done with less
-                    effort and time with those technologies.
-                </p>
-            </div>
-            <button class="hire-btn">Hire Me</button>
+    <div class="container pt-5 mt-5">
+      <div class="row text-start">
+        <div class="col-md-3 mb-3">
+          <h3>AsmrProg.</h3>
+          <p>Creative FullStack Developer</p>
         </div>
-
-        <div class="right">
-            <div class="item">
-                <i class='bx bxl-html5'></i>
-            </div>
-            <div class="item">
-                <i class='bx bxl-css3'></i>
-            </div>
-            <div class="item">
-                <i class='bx bxl-typescript'></i>
-            </div>
-            <div class="item">
-                <i class='bx bxl-git'></i>
-            </div>
-            <div class="item">
-                <i class='bx bxl-bootstrap'></i>
-            </div>
-            <div class="item">
-                <i class='bx bxl-php'></i>
-            </div>
-            <div class="item">
-                <i class='bx bxl-sass'></i>
-            </div>
-            <div class="item">
-                <i class='bx bxl-tailwind-css'></i>
-            </div>
-            <div class="item">
-                <i class='bx bxl-mongodb'></i>
-            </div>
-            <div class="item">
-                <i class='bx bxl-graphql'></i>
-            </div>
-            <div class="item">
-                <i class='bx bxl-jquery'></i>
-            </div>
-            <div class="item">
-                <i class='bx bxl-angular'></i>
-            </div>
+        <div class="col-md-3 mb-3">
+          <h4>Useful Links</h4>
+          <a href="#" class="d-block">Home</a>
+          <a href="#" class="d-block">About</a>
+          <a href="#" class="d-block">Skills</a>
+          <a href="#" class="d-block">Portfolio</a>
+          <a href="#" class="d-block">Contact</a>
         </div>
-
+        <div class="col-md-3 mb-3">
+          <h4>Social Media</h4>
+          <a href="#" class="d-block">Instagram</a>
+          <a href="#" class="d-block">LinkedIn</a>
+          <a href="#" class="d-block">Dribbble</a>
+          <a href="#" class="d-block">YouTube</a>
+          <a href="#" class="d-block">GitHub</a>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h4>Newsletter</h4>
+          <p>Enter your email to get updates.</p>
+          <form class="d-flex gap-2">
+            <input type="email" class="form-control" placeholder="Your email address" />
+            <button class="btn btn-warning"><i class='bx bxl-telegram'></i></button>
+          </form>
+        </div>
+      </div>
     </div>
-
-    <footer>
-        <div class="start">
-            <h3>Start a project</h3>
-            <p>Interested in working together? We should queue up a chat. I’ll buy the coffee.</p>
-            <button>Let's do this</button>
-        </div>
-
-        <div class="cols">
-            <div class="about-col">
-                <h3>AsmrProg.</h3>
-                <p>Creative FullStack Developer</p>
-            </div>
-
-            <div class="links-col">
-                <h4>Useful Links</h4>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Contact</a>
-            </div>
-
-            <div class="links-col">
-                <h4>Social Media</h4>
-                <a href="#">Instagram</a>
-                <a href="#">Linkedin</a>
-                <a href="#">Dribble</a>
-                <a href="#">Youtube</a>
-                <a href="#">Github</a>
-            </div>
-
-            <div class="news-col">
-                <h4>NewsLetter</h4>
-                <p>Enter your email and get notified about news, of.</p>
-
-                <form>
-                    <input type="email" placeholder="Your email address">
-                    <button><i class='bx bxl-telegram'></i></button>
-                </form>
-
-            </div>
-
-        </div>
-
-    </footer>
+  </footer>
 
 </body>
 
