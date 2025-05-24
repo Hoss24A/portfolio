@@ -1,86 +1,86 @@
-// htmlcss progress circular bar 
-let htmlProgress = document.querySelector(".html-css"),
-  htmlValue = document.querySelector(".html-progress");
+// python progress circular bar 
+let pythonProgress = document.querySelector(".python"),
+  pythonValue = document.querySelector(".python-progress");
 
-let htmlStartValue = 0,
-  htmlEndValue = 90,
-  htmlspeed = 30;
+let pythonStartValue = 0,
+  pythonEndValue = 90,
+  pythonspeed = 30;
 
-let progresshtml = setInterval(() => {
-  htmlStartValue++;
+let progresspython = setInterval(() => {
+  pythonStartValue++;
 
-  htmlValue.textContent = `${htmlStartValue}%`;
-  htmlProgress.style.background = `conic-gradient(#fca61f ${
-    htmlStartValue * 3.6
+  pythonValue.textContent = `${pythonStartValue}%`;
+  pythonProgress.style.background = `conic-gradient(#fca61f ${
+    pythonStartValue * 3.6
   }deg, #ededed 0deg)`;
 
-  if (htmlStartValue == htmlEndValue) {
-    clearInterval(progresshtml);
+  if (pythonStartValue == pythonEndValue) {
+    clearInterval(progresspython);
   }
-}, htmlspeed);
+}, pythonspeed);
 
-// javasript progress circular bar 
-let javascriptProgress = document.querySelector(".javascript"),
-  javascriptValue = document.querySelector(".javascript-progress");
+// cpp progress circular bar 
+let cppProgress = document.querySelector(".cpp"),
+  cppValue = document.querySelector(".cpp-progress");
 
-let javascriptStartValue = 0,
-  javascriptEndValue = 75,
+let cppStartValue = 0,
+  cppEndValue = 75,
   jsspeed = 30;
 
 let progressjs = setInterval(() => {
-  javascriptStartValue++;
+  cppStartValue++;
 
-  javascriptValue.textContent = `${javascriptStartValue}%`;
-  javascriptProgress.style.background = `conic-gradient(#7d2ae8 ${
-    javascriptStartValue * 3.6
+  cppValue.textContent = `${cppStartValue}%`;
+  cppProgress.style.background = `conic-gradient(#7d2ae8 ${
+    cppStartValue * 3.6
   }deg, #ededed 0deg)`;
 
-  if (javascriptStartValue == javascriptEndValue) {
+  if (cppStartValue == cppEndValue) {
     clearInterval(progressjs);
   }
 }, jsspeed);
 
-// php progress circular bar 
-let phpProgress = document.querySelector(".php"),
-  phpValue = document.querySelector(".php-progress");
+// java progress circular bar 
+let javaProgress = document.querySelector(".java"),
+  javaValue = document.querySelector(".java-progress");
 
-let phpStartValue = 0,
-  phpEndValue = 80,
-  phpspeed = 30;
+let javaStartValue = 0,
+  javaEndValue = 80,
+  javaspeed = 30;
 
-let progressphp = setInterval(() => {
-  phpStartValue++;
+let progressjava = setInterval(() => {
+  javaStartValue++;
 
-  phpValue.textContent = `${phpStartValue}%`;
-  phpProgress.style.background = `conic-gradient(#20c997 ${
-    phpStartValue * 3.6
+  javaValue.textContent = `${javaStartValue}%`;
+  javaProgress.style.background = `conic-gradient(#20c997 ${
+    javaStartValue * 3.6
   }deg, #ededed 0deg)`;
 
-  if (phpStartValue == phpEndValue) {
-    clearInterval(progressphp);
+  if (javaStartValue == javaEndValue) {
+    clearInterval(progressjava);
   }
-}, phpspeed);
+}, javaspeed);
 
-// reactjs progress circular bar 
-let reactProgress = document.querySelector(".reactjs"),
-  reactValue = document.querySelector(".reactjs-progress");
+// web progress circular bar 
+let webProgress = document.querySelector(".web"),
+  webValue = document.querySelector(".web-progress");
 
-let reactStartValue = 0,
-  reactEndValue = 30,
-  rjsspeed = 30;
+let webStartValue = 0,
+  webEndValue = 30,
+  webspeed = 30;
 
-let progressreact = setInterval(() => {
-  reactStartValue++;
+let progressweb = setInterval(() => {
+  webStartValue++;
 
-  reactValue.textContent = `${reactStartValue}%`;
-  reactProgress.style.background = `conic-gradient(#3f396d ${
-    reactStartValue * 3.6
+  webValue.textContent = `${webStartValue}%`;
+  webProgress.style.background = `conic-gradient(#3f396d ${
+    webStartValue * 3.6
   }deg, #ededed 0deg)`;
 
-  if (reactStartValue == reactEndValue) {
-    clearInterval(progressreact);
+  if (webStartValue == webEndValue) {
+    clearInterval(progressweb);
   }
-}, rjsspeed);
+}, webspeed);
 
 
 // filter using javascript

@@ -176,16 +176,16 @@ body{
     font-size: 1.5rem;
     font-weight: 600;
 }
-.html-progress{
+.python-progress{
     color: #fca61f;
 }
-.javascript-progress{
+.cpp-progress{
     color: #6f34fe;
 }
-.php-progress{
+.java-progress{
     color: #20c997;
 }
-.reactjs-progress{
+.web-progress{
     color: #3f396d;
 }
 .text{
