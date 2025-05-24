@@ -206,3 +206,45 @@ footer input[type="email"] {
     color: white;
     margin-bottom: 10px;
 }
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    margin: 2rem;
+}
+
+.project {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.project h4 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Reuse .hire-btn style for consistency */
+.project .hire-btn {
+    margin-top: 0.5rem;
+    display: inline-block;
+}
