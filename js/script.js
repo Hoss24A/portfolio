@@ -142,3 +142,24 @@ mybutton.addEventListener("click",function(){
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
+
+
+// fade-in effect for the how i work section
+document.addEventListener("DOMContentLoaded", () => {
+    const steps = document.querySelectorAll(".workflow-step");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in");
+          }else {
+            entry.target.classList.remove("fade-in");
+          }
+        });
+      },
+      { threshold: 0.2 } // Trigger when 20% of the element is visible
+    );
+
+    steps.forEach((step) => observer.observe(step));
+  });
