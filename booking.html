@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Cuts Barbershop</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #d4af37;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .navbar {
+            background-color: var(--dark);
+            border-bottom: 2px solid var(--primary);
+        }
+        
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--primary) !important;
+            font-size: 1.8rem;
+        }
+        
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+            margin: 0 10px;
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary) !important;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        
+        .btn-gold {
+            background-color: var(--primary);
+            color: var(--dark);
+            font-weight: 600;
+            border: none;
+            padding: 10px 25px;
+        }
+        
+        .btn-gold:hover {
+            background-color: #c19b2e;
+            color: var(--dark);
+        }
+        
+        .footer {
+            background-color: var(--dark);
+            color: white;
+        }
+        
+        .footer a {
+            color: var(--light);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer a:hover {
+            color: var(--primary);
+        }
+        
+        .booking-section {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Fresh Cuts</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="case-study1.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="case-study1.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#booking">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-5 booking-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <h2 class="text-center mb-4">Book Your Appointment</h2>
+                            <div id="booking-app"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="text-primary mb-4">Fresh Cuts</h3>
+                    <p>Providing premium barber services with traditional techniques and modern style since 2010.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="case-study1.html">Home</a></li>
+                        <li class="mb-2"><a href="case-study1.html#services">Services</a></li>
+                        <li class="mb-2"><a href="#booking">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="text-white mb-4">Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> 123 Barber Street, Downtown, NY 10001</p>
+                    <p><i class="fas fa-phone me-2"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@classiccuts.com</p>
+                    <p><i class="fas fa-clock me-2"></i> Mon-Sat: 9AM - 7PM, Sun: Closed</p>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-5 text-center text-md-end">
+                    <p class="mb-0">Designed by Hossam Asad</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- React Booking App Container -->
+    <div id="root"></div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- React and ReactDOM for the booking component -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- Booking App Script -->
+    <script type="text/babel">
+        // Booking Form Component
+        function BookingForm() {
+            const [step, setStep] = React.useState(1);
+            const [formData, setFormData] = React.useState({
+                service: '',
+                barber: '',
+                date: '',
+                time: '',
+                name: '',
+                phone: '',
+                email: ''
+            });
+            const [availableTimes, setAvailableTimes] = React.useState([]);
+            
+            const services = [
+                { id: 1, name: 'Classic Haircut', duration: 30, price: 35 },
+                { id: 2, name: 'Hot Towel Shave', duration: 45, price: 45 },
+                { id: 3, name: 'Beard Trim', duration: 25, price: 25 },
+                { id: 4, name: 'Haircut & Beard', duration: 50, price: 55 },
+                { id: 5, name: 'Royal Treatment', duration: 90, price: 85 }
+            ];
+            
+            const barbers = [
+                { id: 1, name: 'Tony Marino' },
+                { id: 2, name: 'Marcus Johnson' },
+                { id: 3, name: 'Carlos Mendez' },
+                { id: 4, name: 'Any Barber' }
+            ];
+            
+            const generateTimes = () => {
+                const times = [];
+                const open = 9; // 9AM
+                const close = 19; // 7PM
+                const interval = 15; // minutes
+                
+                for (let hour = open; hour < close; hour++) {
+                    for (let minute = 0; minute < 60; minute += interval) {
+                        const timeString = `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`;
+                        times.push(timeString);
+                    }
+                }
+                
+                // Filter out some random times to simulate booked appointments
+                return times.filter(time => Math.random() > 0.3);
+            };
+            
+            const handleServiceSelect = (serviceId) => {
+                setFormData({...formData, service: serviceId});
+                setStep(2);
+            };
+            
+            const handleBarberSelect = (barberId) => {
+                setFormData({...formData, barber: barberId});
+                setStep(3);
+            };
+            
+            const handleDateSelect = (date) => {
+                setFormData({...formData, date});
+                setAvailableTimes(generateTimes());
+                setStep(4);
+            };
+            
+            const handleTimeSelect = (time) => {
+                setFormData({...formData, time});
+                setStep(5);
+            };
+            
+            const handleInputChange = (e) => {
+                const { name, value } = e.target;
+                setFormData({...formData, [name]: value});
+            };
+            
+            const handleSubmit = (e) => {
+                e.preventDefault();
+                // In a real app, you would send this data to your backend
+                console.log('Booking submitted:', formData);
+                setStep(6); // Confirmation step
+            };
+            
+            const resetForm = () => {
+                setFormData({
+                    service: '',
+                    barber: '',
+                    date: '',
+                    time: '',
+                    name: '',
+                    phone: '',
+                    email: ''
+                });
+                setStep(1);
+            };
+            
+            // Get today's date in YYYY-MM-DD format
+            const today = new Date().toISOString().split('T')[0];
+            
+            return (
+                <div>
+                    {step === 1 && (
+                        <div className="text-center">
+                            <h3 className="mb-4">Select a Service</h3>
+                            <div className="row g-3">
+                                {services.map(service => (
+                                    <div key={service.id} className="col-md-6">
+                                        <div 
+                                            className={`card service-option ${formData.service === service.id ? 'border-primary border-2' : ''}`}
+                                            onClick={() => handleServiceSelect(service.id)}
+                                            style={{ cursor: 'pointer' }}
+                                        >
+                                            <div className="card-body">
+                                                <h5>{service.name}</h5>
+                                                <p className="mb-1">{service.duration} minutes</p>
+                                                <p className="text-primary fw-bold">${service.price}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+                    
+                    {step === 2 && (
+                        <div className="text-center">
+                            <h3 className="mb-4">Select Your Barber</h3>
+                            <p className="mb-4">Service: {services.find(s => s.id === formData.service).name}</p>
+                            <div className="row g-3">
+                                {barbers.map(barber => (
+                                    <div key={barber.id} className="col-md-6">
+                                        <div 
+                                            className={`card barber-option ${formData.barber === barber.id ? 'border-primary border-2' : ''}`}
+                                            onClick={() => handleBarberSelect(barber.id)}
+                                            style={{ cursor: 'pointer' }}
+                                        >
+                                            <div className="card-body">
+                                                <h5>{barber.name}</h5>
+                                                {barber.id === 4 ? (
+                                                    <p>First available barber</p>
+                                                ) : (
+                                                    <p>Specialist</p>
+                                                )}
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                            <button className="btn btn-outline-secondary mt-4" onClick={() => setStep(1)}>
+                                Back
+                            </button>
+                        </div>
+                    )}
+                    
+                    {step === 3 && (
+                        <div className="text-center">
+                            <h3 className="mb-4">Select a Date</h3>
+                            <p className="mb-4">
+                                Service: {services.find(s => s.id === formData.service).name} with {barbers.find(b => b.id === formData.barber).name}
+                            </p>
+                            <input 
+                                type="date" 
+                                className="form-control mb-3" 
+                                min={today}
+                                onChange={(e) => handleDateSelect(e.target.value)}
+                            />
+                            <button className="btn btn-outline-secondary mt-4" onClick={() => setStep(2)}>
+                                Back
+                            </button>
+                        </div>
+                    )}
+                    
+                    {step === 4 && (
+                        <div className="text-center">
+                            <h3 className="mb-4">Select a Time</h3>
+                            <p className="mb-4">
+                                {formData.date} - {services.find(s => s.id === formData.service).name} with {barbers.find(b => b.id === formData.barber).name}
+                            </p>
+                            <div className="row g-2">
+                                {availableTimes.map((time, index) => (
+                                    <div key={index} className="col-4">
+                                        <button 
+                                            className={`btn w-100 ${formData.time === time ? 'btn-primary' : 'btn-outline-primary'}`}
+                                            onClick={() => handleTimeSelect(time)}
+                                        >
+                                            {time}
+                                        </button>
+                                    </div>
+                                ))}
+                            </div>
+                            <button className="btn btn-outline-secondary mt-4" onClick={() => setStep(3)}>
+                                Back
+                            </button>
+                        </div>
+                    )}
+                    
+                    {step === 5 && (
+                        <div>
+                            <h3 className="mb-4 text-center">Your Information</h3>
+                            <form onSubmit={handleSubmit}>
+                                <div className="mb-3">
+                                    <label className="form-label">Full Name</label>
+                                    <input 
+                                        type="text" 
+                                        className="form-control" 
+                                        name="name" 
+                                        value={formData.name}
+                                        onChange={handleInputChange}
+                                        required
+                                    />
+                                </div>
+                                <div className="mb-3">
+                                    <label className="form-label">Phone Number</label>
+                                    <input 
+                                        type="tel" 
+                                        className="form-control" 
+                                        name="phone" 
+                                        value={formData.phone}
+                                        onChange={handleInputChange}
+                                        required
+                                    />
+                                </div>
+                                <div className="mb-3">
+                                    <label className="form-label">Email Address</label>
+                                    <input 
+                                        type="email" 
+                                        className="form-control" 
+                                        name="email" 
+                                        value={formData.email}
+                                        onChange={handleInputChange}
+                                        required
+                                    />
+                                </div>
+                                <div className="card mb-4">
+                                    <div className="card-body">
+                                        <h5>Appointment Summary</h5>
+                                        <p><strong>Service:</strong> {services.find(s => s.id === formData.service).name}</p>
+                                        <p><strong>Barber:</strong> {barbers.find(b => b.id === formData.barber).name}</p>
+                                        <p><strong>Date:</strong> {formData.date}</p>
+                                        <p><strong>Time:</strong> {formData.time}</p>
+                                    </div>
+                                </div>
+                                <div className="d-flex justify-content-between">
+                                    <button type="button" className="btn btn-outline-secondary" onClick={() => setStep(4)}>
+                                        Back
+                                    </button>
+                                    <button type="submit" className="btn btn-primary">
+                                        Confirm Booking
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    )}
+                    
+                    {step === 6 && (
+                        <div className="text-center">
+                            <div className="mb-4">
+                                <i className="fas fa-check-circle text-success fa-5x"></i>
+                            </div>
+                            <h3 className="mb-3">Booking Confirmed!</h3>
+                            <p className="mb-4">
+                                Your appointment for {services.find(s => s.id === formData.service).name} with {barbers.find(b => b.id === formData.barber).name} on {formData.date} at {formData.time} has been confirmed.
+                            </p>
+                            <p>A confirmation has been sent to {formData.email}.</p>
+                            <button className="btn btn-primary" onClick={resetForm}>
+                                Book Another Appointment
+                            </button>
+                        </div>
+                    )}
+                </div>
+            );
+        }
+        
+        // Render the BookingForm component
+        const root = ReactDOM.createRoot(document.getElementById('booking-app'));
+        root.render(<BookingForm />);
+    </script>
+</body>
+</html>
