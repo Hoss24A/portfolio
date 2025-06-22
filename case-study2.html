@@ -1,12 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Case Study Coming Soon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Match Master</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #92d437;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .navbar {
+            background-color: var(--dark);
+            border-bottom: 2px solid var(--primary);
+        }
+        
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--primary) !important;
+            font-size: 1.8rem;
+        }
+        
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+            margin: 0 10px;
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary) !important;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.stockcake.com/public/9/4/6/946fbafa-74fa-4adb-ade8-8a57ce621167_large/futuristic-brain-design-stockcake.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        
+        .btn-gold {
+            background-color: var(--primary);
+            color: var(--dark);
+            font-weight: 600;
+            border: none;
+            padding: 10px 25px;
+        }
+        
+        .btn-gold:hover {
+            background-color: #348405;
+            color: var(--dark);
+        }
+        
+        .service-card {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .footer {
+            background-color: var(--dark);
+            color: white;
+        }
+        
+        .footer a {
+            color: var(--light);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer a:hover {
+            color: var(--primary);
+        }
+        
+    </style>
 </head>
 <body>
-  <h1>Case Study Coming Soon</h1>
-  <p>This page will showcase my design for a [Service/Game/E-commerce/Analytics] project.</p>
-  <a href="index.html">← Back to portfolio</a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Memory Match Master</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Play Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="display-3 mb-4">Precision Haircuts For The Modern Gentleman</h1>
+                    <p class="lead mb-4">Experience the art of traditional barbering with a modern twist at Memory Match Master.</p>
+                    <a href="booking.html" class="btn btn-gold btn-lg">Play Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5">Our Services</h2>
+                <p class="lead text-muted">Quality services for the discerning gentleman</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-cut fa-3x mb-3" style="color: var(--primary);"></i>
+                            <h4 class="card-title">Classic Haircut</h4>
+                            <p class="card-text">Traditional scissor or clipper cut with detailed finishing for a polished look.</p>
+                            <h5 class="text-primary">$35</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-fire fa-3x mb-3" style="color: var(--primary);"></i>
+                            <h4 class="card-title">Hot Towel Shave</h4>
+                            <p class="card-text">Traditional straight razor shave with hot towels and premium products.</p>
+                            <h5 class="text-primary">$45</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-spa fa-3x mb-3" style="color: var(--primary);"></i>
+                            <h4 class="card-title">Beard Trim</h4>
+                            <p class="card-text">Precision beard shaping and trimming with hot towel treatment.</p>
+                            <h5 class="text-primary">$25</h5>
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-crown fa-3x mb-3" style="color: var(--primary);"></i>
+                            <h4 class="card-title">Royal Treatment</h4>
+                            <p class="card-text"> a meticulous haircut, a luxurious hot towel shave, and facial cleansing all using top-tier grooming products.</p>
+                            <h5 class="text-primary">$85</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personas Section -->
+     <section id="personas" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 text-black">Meet Our Target Users</h2>
+    <div class="row g-4 justify-content-center">
+      
+      <!-- Persona 1 -->
+      <div class="col-md-6">
+        <div class="card shadow h-100">
+          <div class="card-body p-4">
+            <h3 class="mb-3">Olivia Stewart</h3>
+            <h5 class="mb-2">Intrinsic Characteristics:</h5>
+            <ul class="mb-3">
+              <li>Graphic Designer, age 26</li>
+              <li>Visually oriented and loves minimalist design</li>
+              <li>Enjoys short, casual games during breaks</li>
+              <li>Easily distracted by cluttered interfaces</li>
+            </ul>
+            <h5 class="mb-2">Relation to Technology:</h5>
+            <p>Comfortable using tablets and laptops; prefers clean and modern UIs</p>
+            <h5 class="mb-2">Relation to Domain:</h5>
+            <p>Plays mobile puzzle games for relaxation.</p>
+            <h5 class="mb-2">Goal:</h5>
+            <p>Wants a relaxing game with smooth visuals to unwind during work breaks.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Persona 2 -->
+      <div class="col-md-6">
+        <div class="card shadow h-100">
+          <div class="card-body p-4">
+            <h3 class="mb-3">Ahmed Jaleed</h3>
+            <h5 class="mb-2">Intrinsic Characteristics:</h5>
+            <ul class="mb-3">
+              <li>High School Teacher, age 45</li>
+              <li>Methodical thinker who enjoys challenges</li>
+              <li>Competitive with himself; tracks personal progress</li>
+              <li>Often plays educational games with his kids</li>
+            </ul>
+            <h5 class="mb-2">Relation to Technology:</h5>
+            <p>Adept with desktops; moderate mobile user.</p>
+            <h5 class="mb-2">Relation to Domain:</h5>
+            <p>Interested in games that stimulate memory and cognition.</p>
+            <h5 class="mb-2">Goal:</h5>
+            <p>Wants to challenge and improve his memory in an engaging way.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Storyboard 1 Section -->
+<section id="storyboard1" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 text-black">Storyboard 1: Olvia's Gaming Journey</h2>
+    <div class="row g-4">
+      <div class="col-12">
+        <div class="image-wrapper">
+          <img src="images/story1.png" class="img-fluid w-100" alt="Storyboard Step 1">
+        </div> 
+    </div>
+  </div>
+</section>
+
+
+<!-- Storyboard 2 Section -->
+<section id="storyboard2" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 text-black">Storyboard 2: John's Service Exploration</h2>
+    <div class="row g-4">
+      
+      <!-- Step 1 -->
+      <div class="col-md-4">
+        <div class="card shadow h-100">
+          <img src="images/Lop1.png" class="card-img-top" alt="Storyboard Step 1">
+          <div class="card-body">
+            <h5 class="card-title text-center">Step 1</h5>
+            <p class="card-text text-center">John browses different service options and pricing.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Step 2 -->
+      <div class="col-md-4">
+        <div class="card shadow h-100">
+          <img src="images/Lop2.png" class="card-img-top" alt="Storyboard Step 2">
+          <div class="card-body">
+            <h5 class="card-title text-center">Step 2</h5>
+            <p class="card-text text-center">he chooses a premium service from the booking menu.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Step 3 -->
+      <div class="col-md-4">
+        <div class="card shadow h-100">
+          <img src="images/Lop3.png" class="card-img-top" alt="Storyboard Step 3">
+          <div class="card-body">
+            <h5 class="card-title text-center">Step 3</h5>
+            <p class="card-text text-center">John chooses his favorite barber.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <a class="navbar-brand" href="#">Memory Match Master</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                    <p>Providing premium barber services with traditional techniques and modern style since 2010.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home">Home</a></li>
+                        <li class="mb-2"><a href="#services">Services</a></li>
+                        <li class="mb-2"><a href="booking.html">Play Now</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="text-white mb-4">Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> 123 Barber Street, Downtown, NY 10001</p>
+                    <p><i class="fas fa-phone me-2"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@classiccuts.com</p>
+                    <p><i class="fas fa-clock me-2"></i> Mon-Sat: 9AM - 7PM, Sun: Closed</p>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-5 text-center text-md-end">
+                    <p class="mb-0">Designed by Hossam Asad</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
